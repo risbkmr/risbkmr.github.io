@@ -2,8 +2,10 @@ function scrollfun(){
     var wrapper = document.querySelector('.wrapper');
     var themetag = document.querySelector('#themetag');
     var y = wrapper.scrollTop;
-    if(y >= 0 && y < window.innerHeight){
-        themetag.setAttribute('content', '#2fbf71')
+
+    console.log(y)
+    if(y >= 0 && y < window.innerWidth){
+        themetag.setAttribute('content', '#ed143d')
     }
     if(y >= window.innerHeight && y < 2 *window.innerHeight){
         themetag.setAttribute('content', '#2fbf71')
@@ -17,4 +19,5 @@ function scrollfun(){
     if(y >= 4 * window.innerHeight && y < 5 * window.innerHeight){
         themetag.setAttribute('content', '#363537')
     }
+    console.log(themetag.content)
 }
