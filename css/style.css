@@ -20,6 +20,10 @@ p{
     font-size: inherit;
     color: #ffffff;
 }
+.wrapper{
+    height: 100vh;
+    overflow: auto;
+}
 section{
     height: 600px;
     height: 100vh !important;
