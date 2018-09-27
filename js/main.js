@@ -2,7 +2,9 @@ function scrollfun(){
     var wrapper = document.querySelector('.wrapper');
     var themetag = document.querySelector('#themetag');
     var y = wrapper.scrollTop;
-
+    if(y >= 0 && y < window.innerHeight){
+        themetag.setAttribute('content', '#2fbf71')
+    }
     if(y >= window.innerHeight && y < 2 *window.innerHeight){
         themetag.setAttribute('content', '#2fbf71')
     }
